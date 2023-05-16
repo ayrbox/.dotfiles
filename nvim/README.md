@@ -8,7 +8,7 @@
 cd ~
 git clone git@github.com:ayrbox/dotfile.git
 
-ln -s ~/dotfile/neovim ~/.config/nvim
+ln -s ~/.dotfile/nvim ~/.config/
 ```
 Run `nvim` and wait for the plugins to be installed 
 
