@@ -1,14 +1,13 @@
-vim.cmd.colorscheme('onedark');
+function SetColorScheme()
+  vim.cmd.colorscheme('onedark');
+  require('onedark').setup({
+    style = 'deep',
+    transparent = true,
+    term_colors = true,
+  })
 
---[[
-local status_ok, colorscheme = pcall(vim.cmd, 'colorscheme onedark')
-if not status_ok then
-  vim.notify("colorscheme onedark not found")
-  return
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
-]]
-require('onedark').setup({
-  style = 'deep',
-  transparent = true,
-  term_colors = true,
-})
+
+SetColorScheme()

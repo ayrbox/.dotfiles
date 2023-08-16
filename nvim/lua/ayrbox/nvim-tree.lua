@@ -42,7 +42,7 @@ nvim_tree.setup {
     args = {},
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
   git = {
     enable = true,
