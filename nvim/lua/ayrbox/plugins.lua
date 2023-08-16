@@ -124,6 +124,9 @@ packer.startup(function(use)
   -- Buffer Tabs
   use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
+  -- Prettier
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
