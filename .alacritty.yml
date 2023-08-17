@@ -20,12 +20,12 @@ font:
 window:
   dimensions:
     columns: 200
-    lines: 85
+    lines: 8
 
   decorations: buttonless
 
   startup_mode: Maximized
-  opacity: 0.7
+  opacity: 1
   use_thin_strokes: true
 
 colors:
