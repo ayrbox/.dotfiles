@@ -13,8 +13,8 @@ default_floating_border none
 
 # Monitor names 
 # NOTE: Use `xrandr` to find the the display ouputs
-# set $pm DisplayPort-1
-# set $sm HDMI-A-0
+set $pm DisplayPort-1
+set $sm HDMI-A-0
 
 # Hide borders
 hide_edge_borders none
@@ -169,15 +169,15 @@ bindsym $mod+8 workspace $ws8
 
 # NOTE: Configure workspace to be displayed in monitors defined 
 
-# workspace $ws1 output $pm
-# workspace $ws2 output $pm
-# workspace $ws3 output $pm
-# workspace $ws4 output $pm
-# workspace $ws5 output $pm
-# workspace $ws6 output $pm
-#
-# workspace $ws7 output $sm
-# workspace $ws8 output $sm
+workspace $ws1 output $pm
+workspace $ws2 output $pm
+workspace $ws3 output $pm
+workspace $ws4 output $pm
+workspace $ws5 output $pm
+workspace $ws6 output $pm
+
+workspace $ws7 output $sm
+workspace $ws8 output $sm
 
 
 # Move focused container to workspace

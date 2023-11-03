@@ -51,7 +51,7 @@ packer.startup(function(use)
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP
-      'j-hui/fidget.nvim',
+    {'j-hui/fidget.nvim', tag = "legacy"},
 
       -- Additional lua configuration, makes nvim stuff amazing
       'folke/neodev.nvim',
@@ -105,7 +105,7 @@ packer.startup(function(use)
 
 
   use 'nvim-lualine/lualine.nvim'           -- Fancier statusline
-  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+  use {'lukas-reineke/indent-blankline.nvim', main="ibl", opts={}} -- Add indentation guides even on blank lines
   use 'numToStr/Comment.nvim'               -- "gc" to comment visual regions/lines
   use 'tpope/vim-sleuth'                    -- Detect tabstop and shiftwidth automatically
 
