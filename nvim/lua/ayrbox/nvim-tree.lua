@@ -103,7 +103,7 @@ nvim_tree.setup {
       window_picker = {
         enable = false
       },
-      quit_on_open = false,
+      quit_on_open = true,
     }
   }
 }

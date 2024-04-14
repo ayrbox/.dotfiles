@@ -59,3 +59,5 @@ key_bindings:
   - { key: Down, mods: Alt, chars: "\x02J" }
   - { key: Right, mods: Alt, chars: "\x02L" }
   - { key: Up, mods: Alt, chars: "\x02K" }
+  - { key: Up, mods: Alt, chars: "\x02\x70" }
+  - { key: Up, mods: Alt, chars: "\x02\x6e" }
