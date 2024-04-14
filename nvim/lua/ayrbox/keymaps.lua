@@ -75,7 +75,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
 -- nvim Tree Toggle
-keymap("n", "<leader>\\", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>b", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>\\", "<cmd>Telescope file_browser<cr>", opts)
 keymap("n", "<leader>r", ":NvimTreeRefresh<cr>", opts)
 
 -- Buffers
@@ -100,3 +101,9 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+
+
+-- Cnext some primegen file 
+keymap("n", "N", ":cnext<CR>", opts)
+keymap("n", "P", ":cprev<CR>", opts)
+

@@ -102,6 +102,7 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
+  use 'f-person/git-blame.nvim' -- Git Blame https://github.com/f-person/git-blame.nvim
 
 
   use 'nvim-lualine/lualine.nvim'           -- Fancier statusline
@@ -115,6 +116,11 @@ packer.startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     }
   }
+
+ use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  } 
 
   use {
     "windwp/nvim-autopairs",
