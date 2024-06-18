@@ -117,10 +117,15 @@ packer.startup(function(use)
     }
   }
 
- use {
+  use {
     "nvim-telescope/telescope-file-browser.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   } 
+
+  use {
+    "ThePrimeagen/harpoon",
+    requires = { "nvim-lua/plenary.nvim" }
+  }
 
   use {
     "windwp/nvim-autopairs",

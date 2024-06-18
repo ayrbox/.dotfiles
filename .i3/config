@@ -2,7 +2,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
-set $mod Mod1
+set $mod Mod4
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -20,7 +20,7 @@ set $sm HDMI-A-0
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none
+bindsym $mod+u border none 
 bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
@@ -33,13 +33,13 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec terminal
-bindsym $mod+Return exec alacritty 
+bindsym Mod1+Return exec alacritty 
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shif+q kill
 
 # start program launcher
-bindsym $mod+space exec --no-startup-id dmenu_recency
+bindsym Mod1+space exec --no-startup-id dmenu_recency
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -67,8 +67,8 @@ bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+# bindsym $mod+t exec --no-startup-id pkill picom
+# bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -113,12 +113,12 @@ bindsym $mod+Space+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Ctrl+s layout stacking
+bindsym $mod+Ctrl+t layout tabbed
+bindsym $mod+Ctrl+d layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -169,12 +169,12 @@ bindsym $mod+8 workspace $ws8
 
 # NOTE: Configure workspace to be displayed in monitors defined 
 
-workspace $ws1 output $pm
-workspace $ws2 output $pm
-workspace $ws3 output $pm
-workspace $ws4 output $pm
-workspace $ws5 output $pm
-workspace $ws6 output $pm
+workspace $ws1 output $sm
+workspace $ws2 output $sm
+workspace $ws3 output $sm
+workspace $ws4 output $sm
+workspace $ws5 output $sm
+workspace $ws6 output $sm
 
 workspace $ws7 output $sm
 workspace $ws8 output $sm
@@ -274,8 +274,8 @@ mode "resize" {
         # Pressing down will grow the window’s height.
         bindsym j resize shrink width 5 px or 5 ppt
         bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym h resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

@@ -1,0 +1,152 @@
+[colors]
+transparent_background_colors = true
+
+[font]
+size = 14
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Thin"
+
+[[keyboard.bindings]]
+chars = "#"
+key = "Key3"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002v"
+key = "D"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002v"
+key = "Return"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0002s"
+key = "Return"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002x"
+key = "W"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002h"
+key = "h"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002l"
+key = "l"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002F"
+key = "F"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00021"
+key = "Key1"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00022"
+key = "Key2"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00023"
+key = "Key3"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00024"
+key = "Key4"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00025"
+key = "Key5"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00026"
+key = "Key6"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00027"
+key = "Key7"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00028"
+key = "Key8"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00029"
+key = "Key9"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002H"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002J"
+key = "Down"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002L"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002K"
+key = "Up"
+mods = "Alt"
+
+
+[[keyboard.bindings]]
+chars = "\u0002p"
+key = "H"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0002n"
+key = "L"
+mods = "Alt|Shift"
+
+
+[window]
+decorations = "None"
+opacity = 0.8
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 200
+lines = 85

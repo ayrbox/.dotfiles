@@ -75,9 +75,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
 -- nvim Tree Toggle
-keymap("n", "<leader>b", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<leader>\\", "<cmd>Telescope file_browser<cr>", opts)
-keymap("n", "<leader>r", ":NvimTreeRefresh<cr>", opts)
+-- keymap("n", "<leader>\\", "<cmd>Telescope file_browser<cr>", opts)
 
 -- Buffers
 keymap("n", "<leader>ff", "<cmd>Format<cr><cmd>w<cr>", opts) -- Format Buffer
@@ -97,13 +95,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Diagnostic keymaps -- TODO: Recheck
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+keymap('n', '[d', vim.diagnostic.goto_prev)
+keymap('n', ']d', vim.diagnostic.goto_next)
+keymap('n', '<leader>e', vim.diagnostic.open_float)
+keymap('n', '<leader>q', vim.diagnostic.setloclist)
 
 
 -- Cnext some primegen file 
 keymap("n", "N", ":cnext<CR>", opts)
 keymap("n", "P", ":cprev<CR>", opts)
+
 

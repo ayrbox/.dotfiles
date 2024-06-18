@@ -15,3 +15,5 @@ require "ayrbox.nvim-tree"
 require "ayrbox.bufferline"
 
 require "ayrbox.null-ls"
+require "ayrbox.git-blame"
+require "ayrbox.harpoon"
