@@ -22,7 +22,7 @@ nvim_tree.setup {
   hijack_netrw = true,
   open_on_tab = false,
   hijack_cursor = true,
-  update_cwd = true,
+  update_cwd = false,
   hijack_directories = {
     enable = true,
     auto_open = true,
@@ -38,7 +38,7 @@ nvim_tree.setup {
   },
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_cwd = false,
     ignore_list = {},
   },
   system_open = {
@@ -101,7 +101,7 @@ nvim_tree.setup {
   actions = {
     open_file = {
       window_picker = {
-        enable = false
+        enable = true 
       },
       quit_on_open = false,
     }
@@ -110,5 +110,5 @@ nvim_tree.setup {
 
 vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<cr>")
 vim.keymap.set("n", "<leader>r", ":NvimTreeRefresh<cr>", opts)
-vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<cr>", opts)
+--vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<cr>", opts)
 

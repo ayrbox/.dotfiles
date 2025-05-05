@@ -2,7 +2,7 @@
 transparent_background_colors = true
 
 [font]
-size = 14
+size = 13
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -19,11 +19,6 @@ style = "Italic"
 [font.normal]
 family = "JetBrainsMono Nerd Font"
 style = "Thin"
-
-[[keyboard.bindings]]
-chars = "#"
-key = "Key3"
-mods = "Alt"
 
 [[keyboard.bindings]]
 chars = "\u0002v"
@@ -144,7 +139,7 @@ mods = "Alt|Shift"
 
 [window]
 decorations = "None"
-opacity = 0.8
+opacity = 0.95
 startup_mode = "Maximized"
 
 [window.dimensions]
