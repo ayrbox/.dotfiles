@@ -4,9 +4,7 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.keymap.set
 
 --Remap space as leader key
-keymap({ 'n', 'v' }, "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+keymap({ "n", "v" }, "<Space>", "<Nop>", opts)
 
 -- Modes
 --   normal_mode = "n",
@@ -24,9 +22,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Remap for dealing with word wrap -- TODO: Recheck
-keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-
+keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+keymap("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -73,36 +70,31 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Clear Highlight
 -- keymap("n", "<leader>c", ":noh<cr>", opts)
 
-
 -- nvim Tree Toggle
 -- keymap("n", "<leader>\\", "<cmd>Telescope file_browser<cr>", opts)
 
 -- Buffers
 keymap("n", "<leader>ff", "<cmd>Format<cr><cmd>w<cr>", opts) -- Format Buffer
 -- keymap("n", "<leader>w", ":bd<cr>:bn<cr>", opts)          --Close Buffer and focus on previous buffer
-keymap("n", "<leader>w", ":bd<cr>", opts)                    --Close Buffer and focus on previous buffer
-
+keymap("n", "<leader>w", ":bd<cr>", opts) --Close Buffer and focus on previous buffer
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
+local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
+vim.api.nvim_create_autocmd("TextYankPost", {
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+	group = highlight_group,
+	pattern = "*",
 })
 
 -- Diagnostic keymaps -- TODO: Recheck
-keymap('n', '[d', vim.diagnostic.goto_prev)
-keymap('n', ']d', vim.diagnostic.goto_next)
-keymap('n', '<leader>e', vim.diagnostic.open_float)
-keymap('n', '<leader>q', vim.diagnostic.setloclist)
+keymap("n", "[d", vim.diagnostic.goto_prev)
+keymap("n", "]d", vim.diagnostic.goto_next)
+keymap("n", "<leader>e", vim.diagnostic.open_float)
+keymap("n", "<leader>q", vim.diagnostic.setloclist)
 
-
--- Cnext some primegen file 
+-- Cnext some primegen file
 keymap("n", "N", ":cnext<CR>", opts)
 keymap("n", "P", ":cprev<CR>", opts)
-
-

@@ -34,12 +34,13 @@ local options = {
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   breakindent = true,                      -- Enable break indent
+  softtabstop = 2,
 }
 
 vim.opt.shortmess:append "c"
 
-for option, optionValue in pairs(options) do
-  vim.opt[option] = optionValue
+for o, v in pairs(options) do
+  vim.opt[o] = v
 end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
