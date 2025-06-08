@@ -1,14 +1,14 @@
 # Ayrbox neovim config
 
-> Base on [Neovim from Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) 
+> Base on [Neovim from Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
+**IMPORTANT** Requires [Neovim v0.6.0+](https://github.com/neovim/neovim/releases/tag/v0.6.0)
 
-**IMPORTANT** Requires [Neovim v0.6.0+](https://github.com/neovim/neovim/releases/tag/v0.6.0) 
 ```
 git clone git@github.com:ayrbox/neovim-config.git ~/.config/nvim
 ```
-Run `nvim` and wait for the plugins to be installed 
 
+Run `nvim` and wait for the plugins to be installed
 
 Nerd Font:
 
@@ -25,12 +25,18 @@ For any other font.
 brew install --cask font-<FONTNAME>-nerd-font
 ```
 
+## Tmux
+
+```sh
+ln -s ~/.dotfiles/.tmux.conf ~/
+```
 
 Dependencies:
+
 - [nodejs](https://nodejs.org/en/)
-- npm 
+- npm
 - rg `brew install rg`
 
-> The computing scientist's main challenge is not to get confused by the complexities of his own making. 
+> The computing scientist's main challenge is not to get confused by the complexities of his own making.
 
 \- Edsger W. Dijkstra
