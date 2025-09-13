@@ -25,7 +25,7 @@ return {
 			keymap("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
 			keymap("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
 			keymap("n", "<leader>sa", builtin.live_grep, { desc = "[S]earch [A]ll" })
-			keymap("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
+			keymap("n", "<leader>d", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 
 			-- Lsp References rely on LSP Configuration
 			keymap("n", "gr", builtin.lsp_references, { desc = "[G]oto [R]eferences" })

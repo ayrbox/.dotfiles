@@ -92,8 +92,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- Diagnostic keymaps -- TODO: Recheck
 keymap("n", "[d", vim.diagnostic.goto_prev)
 keymap("n", "]d", vim.diagnostic.goto_next)
-keymap("n", "<leader>e", vim.diagnostic.open_float)
-keymap("n", "<leader>q", vim.diagnostic.setloclist)
+--keymap("n", "<leader>e", vim.diagnostic.open_float)
+--keymap("n", "<leader>q", vim.diagnostic.setloclist)
 
 -- Cnext some primegen file
 keymap("n", "N", ":cnext<CR>", opts)

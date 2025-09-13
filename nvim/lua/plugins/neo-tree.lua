@@ -12,6 +12,11 @@ return {
 			popup_border_style = "NC", -- or "" to use 'winborder' on Neovim v0.11+
 			enable_git_status = true,
 			enable_diagnostics = true,
+			filesystem = {
+				follow_current_file = {
+					enabled = true,
+				},
+			},
 		})
 		vim.keymap.set("n", "<C-b>", ":Neotree filesystem toggle left <CR>", {})
 		vim.keymap.set("n", "<leader>#", ":Neotree filesystem toggle left <CR>", {})
