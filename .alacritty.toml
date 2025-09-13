@@ -5,19 +5,19 @@ transparent_background_colors = true
 size = 13
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
+family = "JetBrainsMono NFM"
+style = "Regular"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "JetBrainsMono NFM"
 style = "Bold Italic"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "JetBrainsMono NFM"
 style = "Italic"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "JetBrainsMono NFM"
 style = "Thin"
 
 [[keyboard.bindings]]
@@ -145,3 +145,6 @@ startup_mode = "Maximized"
 [window.dimensions]
 columns = 200
 lines = 85
+
+[terminal.shell]
+program = "tmux"
