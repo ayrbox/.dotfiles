@@ -21,20 +21,21 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require("lspconfig")
+			-- local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-			lspconfig.ts_ls.setup({
+			vim.lsp.enable("ts_ls", {
 				capabilities = capabilities,
 			})
 
-			lspconfig.html.setup({
+			vim.lsp.enable("html", {
 				capabilities = capabilities,
 			})
-			lspconfig.lua_ls.setup({
+
+			vim.lsp.enable("lua_ls", {
 				capabilities = capabilities,
 			})
-			lspconfig.gopls.setup({
+
+			vim.lsp.enable("gopls", {
 				capabilities = capabilities,
 				cmd = { "gopls" },
 				filetypes = { "go", "gomod", "gowork", "gotmpl" },
