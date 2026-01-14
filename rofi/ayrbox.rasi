@@ -32,8 +32,13 @@
     selected-normal-background:  rgba ( 0, 20, 0, 100 % );
     spacing:                     2;
     normal-foreground:           var(foreground);
-    font:			"JetBrains Mono 32";
+    font:			"JetBrains Mono 15";
 }
+
+configuration {
+  steal-focus: true;
+}
+
 window {
     padding:          0px;
     background-color: var(background);
