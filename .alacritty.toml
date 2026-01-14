@@ -1,8 +1,8 @@
 [colors]
 transparent_background_colors = true
-
 [font]
-size = 13
+size = 15
+
 
 [font.bold]
 family = "JetBrainsMono NFM"
@@ -38,7 +38,7 @@ mods = "Control|Shift"
 [[keyboard.bindings]]
 chars = "\u0002c"
 key = "T"
-mods = "Alt"
+mods = "Control"
 
 [[keyboard.bindings]]
 chars = "\u0002x"
@@ -138,7 +138,7 @@ mods = "Alt|Shift"
 
 
 [window]
-decorations = "None"
+# decorations = "None"
 opacity = 0.99
 startup_mode = "Maximized"
 
