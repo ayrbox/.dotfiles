@@ -1,0 +1,38 @@
+font-family=JetBrainsMono NFM
+font-style=Regular
+font-style-bold=Regular
+font-size=15
+
+theme=Gruvbox Dark
+background-opacity=0.88
+cursor-style="block"
+cursor-style-blink=true
+
+window-width=115
+window-height=45
+window-padding-y=25,1
+window-padding-x=1,1
+
+
+keybind = alt+d=text:\x02v
+keybind = ctrl+enter=text:\x02v
+# TODO: keybind = alt+shift+enter=fullscreen
+keybind = ctrl+shift+enter=text:\x02s
+keybind = ctrl+t=text:\x02c
+keybind = ctrl+w=text:\x02x
+# keybind = ctrl+h=text:\x02h
+# keybind = ctrl+l=text:\x02l
+keybind = ctrl+f=text:\x02f
+keybind = alt+digit_1=text:\x021
+keybind = alt+digit_2=text:\x022
+keybind = alt+digit_3=text:\x023
+keybind = alt+digit_4=text:\x024
+keybind = alt+digit_5=text:\x025
+keybind = alt+digit_6=text:\x026
+keybind = alt+digit_7=text:\x027
+keybind = alt+digit_8=text:\x028
+keybind = alt+digit_9=text:\x029
+keybind = alt+left=text:\x02H
+keybind = alt+right=text:\x02L
+keybind = alt+down=text:\x02J
+keybind = alt+up=text:\x02K
