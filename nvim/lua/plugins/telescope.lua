@@ -13,19 +13,18 @@ return {
 
 			keymap("n", "<leader>?", builtin.oldfiles, { desc = "[?] Find recently opened files" })
 			keymap("n", "<leader>/", builtin.buffers, { desc = "[/] Find in existing buffers" })
-			keymap("n", "<leader>f", function()
+			keymap("n", "<leader>b", function()
 				builtin.current_buffer_fuzzy_find(themes.get_dropdown({
 					winblend = 10,
 					previewer = false,
 				}))
 			end, { desc = "[/] Fuzzily search in current buffer]" })
 
-			keymap("n", "<leader>sf", builtin.find_files, { desc = "[S]earch [F]iles" })
-			keymap("n", "<C-p>", builtin.find_files, { desc = "[S]earch [F]iles" })
-			keymap("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
-			keymap("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
-			keymap("n", "<leader>sa", builtin.live_grep, { desc = "[S]earch [A]ll" })
-			keymap("n", "<leader>d", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
+			keymap("n", "<leader>f", builtin.find_files, { desc = "Search [F]iles" })
+			keymap("n", "<leader>h", builtin.help_tags, { desc = "Search [H]elp" })
+			keymap("n", "<leader>w", builtin.grep_string, { desc = "Search current [W]ord" })
+			keymap("n", "<leader>s", builtin.live_grep, { desc = "[S]earch All" })
+			keymap("n", "<leader>d", builtin.diagnostics, { desc = "Search [D]iagnostics" })
 
 			-- Lsp References rely on LSP Configuration
 			keymap("n", "gr", builtin.lsp_references, { desc = "[G]oto [R]eferences" })
